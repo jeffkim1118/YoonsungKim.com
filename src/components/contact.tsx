@@ -10,12 +10,12 @@ function Contact(){
 
     const form = useRef();
 
-    function handleSubmit(e){
+    function handleSubmit(e: React.ChangeEvent<HTMLInputElement>){
         e.preventDefault();
         if(name === "" || email === "" || message === ""){
             setStatus(false);
         }else{
-            emailjs.sendForm('service_qufbpuo', 'template_4y8qqhm', form.current, 'BYtwJwTOulJN4yq_L')
+            emailjs.sendForm('service_qufbpuo', 'template_4y8qqhm', form.current!, 'BYtwJwTOulJN4yq_L')
             .then((result) => {
                 console.log(result.text);
                 e.target.reset();
