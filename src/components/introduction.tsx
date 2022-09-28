@@ -3,9 +3,9 @@ import Pic2 from "../images/pic2.jpg";
 
 function Introduction(){
     return(
-        <div>
+        <div className="intro-container">
             <img src={Pic2} alt="me" style={{width: '200px', height: '250px'}}/>
-            <p>Hello, my name is Yoonsung Kim 
+            <p>Hi, my name is Yoonsung Kim 
             Born in South Korea, raised in New York. I graduated from CUNY Baruch College, 
             Zicklin School of Business as a Computer Information Systems major in 2021. I spent my time,
             after college, to figure out what do I want to do with my life. Then, I decided to become a 
