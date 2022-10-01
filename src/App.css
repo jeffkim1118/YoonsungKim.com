@@ -75,7 +75,21 @@ body{
   50% { border-color: orange }
 }
 
+.card-container{
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.personal-pic{
+  border-radius: 700px;
+  height: 350px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
 .contact-form-container{
   margin: auto;
   width: 25%;
 }
+

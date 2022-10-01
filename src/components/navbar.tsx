@@ -15,10 +15,13 @@ function Navbar(){
                 <a className="nav-link" aria-current="page" href="#/">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#/">Link</a>
+                <a className="nav-link" href="#/">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#/">Disabled</a>
+                <a className="nav-link" href="#/">Portfolio</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#/">Contact</a>
               </li>
             </ul>
           </div>
