@@ -1,9 +1,8 @@
-import React, { useState, useRef } from "react";
-import emailjs from '@emailjs/browser';
-import Warning from "./warning";
+import React, { useState } from "react";
+
 
 function Contact(){
-    const[formStatus, setStatus] = useState(Boolean);
+   
     const[name, setName] = useState("");
     const[email, setEmail] = useState("");
     const[msg, setMsg] = useState("");
