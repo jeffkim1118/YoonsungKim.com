@@ -3,8 +3,7 @@ import Pdf from "../images/resume.pdf";
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 
-export default function Resume(){
-    
+export default function Resume(){ 
     return(
         <div className="resume-section">
             <h2>Resume</h2>
