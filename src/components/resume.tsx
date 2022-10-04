@@ -8,7 +8,7 @@ export default function Resume(){
         <div className="resume-section">
             <h2>Resume</h2>
             <div className="pdf-container">      
-                <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.min.js">
+                <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.16.105/build/pdf.worker.min.js">
                     <Viewer fileUrl={Pdf} />  
                 </Worker>
                 <a href={Pdf} type="button" className="btn btn-primary" target="_blank"  rel="noreferrer">View Resume</a>              

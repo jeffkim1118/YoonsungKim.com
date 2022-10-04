@@ -5,6 +5,7 @@ import Introduction from './components/introduction';
 import Landing from './components/landing';
 import Contact from './components/contact';
 import Portfolio from './components/portfolio';
+import Resume from './components/resume';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Landing />
       <Introduction />
       <Portfolio />
+      <Resume />
       <Contact />
     </div>
   );
