@@ -15,6 +15,10 @@ body{
   background-position: center;
 }
 
+.navbar-container nav{
+  background-color: rgb(37, 37, 37);
+}
+
 .landing-msg{
   display: inline-flex;
   flex-direction: column;
@@ -103,7 +107,7 @@ body{
   body{
     display: flex;
     justify-content: center;
-    background-image: url("./images/landing.jpg");
+    background-image: url("./images/landing-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
     -o-background-size: cover;
