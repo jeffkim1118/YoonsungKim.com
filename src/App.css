@@ -106,7 +106,7 @@ body{
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
   .landing-page{
     display: flex;
