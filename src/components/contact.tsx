@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 
-
 function Contact(){
-   
     const[name, setName] = useState("");
     const[email, setEmail] = useState("");
     const[msg, setMsg] = useState("");
-
     function handleSubmit(e: any){
         e.preventDefault();
        
     }
-
     return(
         <div className="contact-form-container">
             {/* {formStatus === false ? <Warning /> : null} */}

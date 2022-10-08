@@ -1,4 +1,3 @@
-import React from "react";
 import Pic2 from "../images/pic2.jpg";
 
 function Introduction(){

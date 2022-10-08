@@ -1,10 +1,9 @@
-import React from 'react';
 import './App.css';
 import Navbar from "./components/navbar"
 import Introduction from './components/introduction';
 import Landing from './components/landing';
 import Contact from './components/contact';
-import Portfolio from './components/portfolio';
+import Portfolios from './components/portfolios';
 import Resume from './components/resume';
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
       <Navbar />     
       <Landing />
       <Introduction />
-      <Portfolio />
+      <Portfolios />
       <Resume />
       <Contact />
     </div>
