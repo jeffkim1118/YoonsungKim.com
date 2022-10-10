@@ -119,7 +119,17 @@ body{
 
 .contact-form-container{
   margin: auto;
+  width: 100%;
+}
+
+.contact-form{
+  margin: auto;
   width: 25%;
+}
+
+.contact-form button{
+  width: 100%;
+  margin-top: 10px;
 }
 
 .resume-section{
@@ -131,9 +141,25 @@ body{
 
 .pdf-container{
   margin: auto;
-  width: 500px;
+  width: 445px;
 }
 
+.footer-section{
+  margin-top: 5%;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  height: 100px;
+}
+
+.footer{
+  margin: auto;
+  width: fit-content;
+  display: flex;
+}
+
+.email-link{
+  text-decoration: none;
+}
 
 @media (max-width: 460px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
@@ -167,12 +193,12 @@ body{
     font-size: 8px;
   }
 
-  .contact-form-container{
+  .contact-form{
     margin: auto;
-    width: 100%;
+    width: 60%;
   }
   .contact-form button{
-    width: 90%;
-    margin: 10px;
+    width: 100%;
+    margin-top: 10px;
   }
 }

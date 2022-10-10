@@ -5,6 +5,7 @@ import Landing from './components/landing';
 import Contact from './components/contact';
 import Portfolios from './components/portfolios';
 import Resume from './components/resume';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Portfolios />
       <Resume />
       <Contact />
+      <Footer />
     </div>
   );
 }
