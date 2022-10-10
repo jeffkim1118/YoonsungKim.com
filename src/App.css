@@ -166,4 +166,13 @@ body{
   .card-body lead{
     font-size: 8px;
   }
+
+  .contact-form-container{
+    margin: auto;
+    width: 100%;
+  }
+  .contact-form button{
+    width: 90%;
+    margin: 10px;
+  }
 }
