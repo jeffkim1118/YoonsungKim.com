@@ -175,7 +175,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     -o-background-size: cover;
-    background-attachment: fixed;
     background-position: center;
   }
   .intro-section{
@@ -193,6 +192,16 @@ body{
     width: 60%;
     height: 200px;
   }
+
+  .portfolioSection{
+    width: 100%;
+  }
+
+  #portfolio p{
+    margin: auto;
+    width: 60%;
+  }
+  
 
   .card-body lead{
     font-size: 8px;

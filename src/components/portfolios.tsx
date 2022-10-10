@@ -7,7 +7,6 @@ function Portfolios(){
         <div className="portfolioSection" id="portfolio">
             <h1>Portfolio Showcase</h1>
             <div className="portfolios">
-            
                 <div className="first" id="portfolio">                 
                     <img src={Gdwatcher} alt="gdwatcher" id='portfolio-pic'/>
                     <h3>GD Watcher</h3>
