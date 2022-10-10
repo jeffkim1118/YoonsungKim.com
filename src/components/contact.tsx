@@ -19,11 +19,11 @@ function Contact(){
         })
     }
     return(
-        <div className="contact-form-container">
+        <div className="contact-form-container" id="contact">
             {formStatus === false ? <Warning /> : null}
             <form className="contact-form" ref={form} onSubmit={(e: React.SyntheticEvent) => {handleSubmit(e)}}>
                 <div className="form-group">
-
+                <h3>Contact</h3>
                 <label>Name</label>
                 <input className="form-control" type="text" placeholder="Your name" name="to_name"></input>
                 

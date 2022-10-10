@@ -4,7 +4,7 @@ import Ezweather from '../images/ezweather.jpg';
 
 function Portfolios(){
     return(
-        <div className="portfolioSection">
+        <div className="portfolioSection" id="portfolio">
             <h1>Portfolio Showcase</h1>
             <div className="portfolios">
             

@@ -2,7 +2,7 @@ import Pic2 from "../images/pic2.jpg";
 
 function Introduction(){
     return(
-        <div className="card-container">
+        <div className="card-container" id="about">
             <div className="intro-section">
                 <img className="personal-pic" src={Pic2} style={{width:"300px"}} alt="me"/>
                 <div className="card-body">

@@ -4,6 +4,10 @@
   color: rgb(199, 199, 199);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   display: flex;
   justify-content: center;
@@ -159,6 +163,7 @@ body{
 
 .email-link{
   text-decoration: none;
+  margin-top: 20px;
 }
 
 @media (max-width: 460px) {
