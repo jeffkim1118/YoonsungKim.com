@@ -5,7 +5,7 @@ import Ezweather from '../images/ezweather.jpg';
 function Portfolios(){
     return(
         <div className="portfolioSection" id="portfolio">
-            <h1>Portfolio Showcase</h1>
+            <h1 className='showcase-title'>Portfolio Showcase</h1>
             <div className="portfolios">
                 <div className="first" id="portfolio">                 
                     <img src={Gdwatcher} alt="gdwatcher" id='portfolio-pic'/>

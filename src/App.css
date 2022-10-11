@@ -17,6 +17,7 @@ body{
   -o-background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  height: 100%;
 }
 
 .navbar-container nav{
@@ -43,7 +44,7 @@ body{
 .typewriter{
   text-align: center;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 295px;
   width: fit-content;
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +54,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   font-family: 'Anonymous Pro', monospace;
-  color: rgb(199, 199, 199);
+  background-color: rgba(100, 100, 100, 0.5);
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
@@ -81,7 +82,7 @@ body{
 .card-container{
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   /* margin-top: 100px; */
 }
 
@@ -89,34 +90,44 @@ body{
   margin: auto;
   padding: 32px;
   width: 32%;
+  height: fit-content;
   background: rgba(0,0,0,0.5);
   border-radius: 90px;
-  
 }
 
 .personal-pic{
   border-radius: 700px;
-  height: 350px;
   /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   /* filter: grayscale(100%); */
 }
 
+.showcase-title{
+  margin-top: 100px;
+}
+
 .portfolioSection{
   width: 100%;
+  height: 100vh;
   text-align: center;
 }
 
+.portfolios{
+  display: flex;
+}
+
 #portfolio{
-  margin: auto;
+  width: fit-content;
 }
 
 #portfolio p{
+  background-color: rgba(100, 100, 100, 0.5);
   margin: auto;
-  width: 30%;
+  width: 70%;
+  border-radius: 10px;
 }
 
 #portfolio-pic{
-  width: 30%;
+  width: 500px;
   height: 300px;
 }
 
@@ -124,6 +135,7 @@ body{
 .contact-form-container{
   margin: auto;
   width: 100%;
+  margin-bottom: 20em;
 }
 
 .contact-form{
@@ -137,7 +149,7 @@ body{
 }
 
 .resume-section{
-  margin-top: 5%;
+  margin-top: 10%;
   text-align: center;
   width: 100%;
   height: 100vh;
@@ -197,9 +209,17 @@ body{
     width: 100%;
   }
 
+  .portfolios{
+    display: list-item;
+  }  
+
   #portfolio p{
     margin: auto;
     width: 60%;
+  }
+
+  .resume-section{
+    margin-top: 120%;
   }
   
 

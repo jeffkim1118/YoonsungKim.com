@@ -10,7 +10,7 @@ function Navbar(){
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#home">Home</a>
+                <a className="nav-link" aria-current="page" href="#root">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#about">About</a>
