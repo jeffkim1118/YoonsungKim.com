@@ -17,7 +17,7 @@ body{
   -o-background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100%;
+  height: 100vh;
 }
 
 .navbar-container nav{
@@ -44,27 +44,26 @@ body{
 .typewriter{
   text-align: center;
   margin: auto;
-  margin-top: 295px;
   width: fit-content;
   display: flex;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .typewriter h1 {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Anonymous Pro', monospace;
-  background-color: rgba(100, 100, 100, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin: auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .10em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
-    
 }
 
 /* The typing effect */
@@ -82,8 +81,7 @@ body{
 .card-container{
   text-align: center;
   width: 100%;
-  height: 200vh;
-  /* margin-top: 100px; */
+  height: 100vh;
 }
 
 .intro-section{
@@ -91,7 +89,7 @@ body{
   padding: 32px;
   width: 32%;
   height: fit-content;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.9);
   border-radius: 90px;
 }
 
@@ -102,7 +100,8 @@ body{
 }
 
 .showcase-title{
-  margin-top: 100px;
+  height: fit-content;
+  margin: auto;
 }
 
 .portfolioSection{
@@ -113,34 +112,37 @@ body{
 
 .portfolios{
   display: flex;
+  height: fit-content;
 }
 
 #portfolio{
   width: fit-content;
+  height: 50%;
+  margin: auto;
 }
 
 #portfolio p{
-  background-color: rgba(100, 100, 100, 0.5);
+  background-color: rgba(17, 17, 17, 0.9);
   margin: auto;
-  width: 70%;
+  width: 60%;
   border-radius: 10px;
 }
 
 #portfolio-pic{
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
 }
 
 
 .contact-form-container{
-  margin: auto;
   width: 100%;
-  margin-bottom: 20em;
+  height: 100vh;
 }
 
 .contact-form{
   margin: auto;
   width: 25%;
+  height: 50%;
 }
 
 .contact-form button{
@@ -149,22 +151,26 @@ body{
 }
 
 .resume-section{
-  margin-top: 10%;
   text-align: center;
   width: 100%;
   height: 100vh;
 }
 
 .pdf-container{
+  width: fit-content;
+  height: 100%;
   margin: auto;
+}
+
+.pdf{
   width: 445px;
+  margin: 100px;
 }
 
 .footer-section{
-  margin-top: 5%;
   width: 100%;
-  background-color: rgb(31, 31, 31);
-  height: 100px;
+  height: fit-content;
+  background-color: rgb(22, 22, 22);
 }
 
 .footer{
@@ -173,9 +179,18 @@ body{
   display: flex;
 }
 
-.email-link{
-  text-decoration: none;
-  margin-top: 20px;
+#links{
+ width: 50px;
+ height: 50px;
+ margin: 10px;
+ border: 1px solid rgb(37, 37, 37);
+ 
+}
+
+#links:hover{
+  width: 55px;
+  height: 55px;
+  background-color: beige;
 }
 
 @media (max-width: 460px) {
@@ -195,9 +210,6 @@ body{
 
   .personal-pic{
     border-radius: 700px;
-    
-    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    /* filter: grayscale(100%); */
   }
 
   #portfolio-pic{
@@ -208,6 +220,8 @@ body{
   .portfolioSection{
     width: 100%;
   }
+
+  
 
   .portfolios{
     display: list-item;

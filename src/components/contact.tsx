@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import Warning from "./warning";
 
 function Contact(){
-    const[formStatus, setStatus] = React.useState<boolean>();
+    const[formStatus, setStatus] = React.useState<boolean>(true);
     const form = useRef(null);
     function handleSubmit(e: any){
         e.preventDefault();
