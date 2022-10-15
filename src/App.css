@@ -17,7 +17,6 @@ body{
   -o-background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100vh;
 }
 
 .navbar-container nav{
@@ -195,17 +194,14 @@ body{
 
 @media (max-width: 460px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  
   body{
-    display: flex;
-    justify-content: center;
-    background-image: url("./images/dyno.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    -o-background-size: cover;
-    background-position: center;
+    width: 100%;
+    background-image: url("./images/night.png");
+    background-color: black;
   }
   .intro-section{
-    width: 80%;
+    width: 100vw;
   }
 
   .personal-pic{
