@@ -5,6 +5,7 @@
 }
 
 html{
+  width: 100vw;
   scroll-behavior: smooth;
 }
 
@@ -17,6 +18,10 @@ body{
   -o-background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+.navbar-container{
+  width: 100%;
 }
 
 .navbar-container nav{
@@ -196,9 +201,8 @@ body{
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
   
   body{
-    width: 100%;
     background-image: url("./images/night.png");
-    background-color: black;
+    background-size: auto;
   }
   .intro-section{
     width: 100vw;
