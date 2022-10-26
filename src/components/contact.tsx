@@ -1,18 +1,24 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Warning from "./warning";
+import Success from "./success";
 
 function Contact(){
-    const[name, setName] = React.useState<string>();
-    const[email, setEmail] = React.useState<string>();
-    const[content, setContent] = React.useState<string>();
-    const[formStatus, setStatus] = React.useState<boolean>(true);
+    const[name, setName] = React.useState<string>("");
+    const[email, setEmail] = React.useState<string>("");
+    const[content, setContent] = React.useState<string>("");
+    const[formStatus, setStatus] = React.useState<boolean>();
     const form = useRef(null);
     function handleSubmit(e: any){
         e.preventDefault();
-        const currentForm = form.current
+        // Check if each inputs are filled correctly.
+        if(name === "" || email === "" || content === ""){
+            setStatus(false)
+            // Else, continue on sending email.
+        }else{
+            const currentForm = form.current
         if(currentForm == null) return;
-        emailjs.sendForm('service_qufbpuo', 'template_4y8qqhm', currentForm , 'fxb823XzUHUso3VSh')
+            emailjs.sendForm('service_qufbpuo', 'template_4y8qqhm', currentForm , 'fxb823XzUHUso3VSh')
         .then((result) => {
             console.log(result.text)
             setStatus(true)
@@ -20,10 +26,15 @@ function Contact(){
             console.log(error.text)
             setStatus(false)
         })
+        setStatus(true);
+        }
+        
+        
     }
     return(
         <div className="contact-form-container" id="contact">
             {formStatus === false ? <Warning /> : null}
+            {formStatus === true ? <Success /> : null}
             <form className="contact-form" ref={form} onSubmit={(e: React.SyntheticEvent) => {handleSubmit(e)}}>
                 <div className="form-group">
                 <h3>Contact</h3>

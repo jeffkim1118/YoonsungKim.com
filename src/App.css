@@ -137,6 +137,13 @@ body{
   height: 200px;
 }
 
+.alert{
+  margin: auto;
+  width: fit-content;
+}
+.alert-message{
+  color: black;
+}
 
 .contact-form-container{
   width: 100%;
