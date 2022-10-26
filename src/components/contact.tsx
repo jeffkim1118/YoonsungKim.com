@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Warning from "./warning";
 
 function Contact(){
+    const[name, setName] = React.useState<string>();
+    const[email, setEmail] = React.useState<string>();
+    const[content, setContent] = React.useState<string>();
     const[formStatus, setStatus] = React.useState<boolean>(true);
     const form = useRef(null);
     function handleSubmit(e: any){
@@ -25,13 +28,13 @@ function Contact(){
                 <div className="form-group">
                 <h3>Contact</h3>
                 <label>Name</label>
-                <input className="form-control" type="text" placeholder="Your name" name="to_name"></input>
+                <input className="form-control" type="text" placeholder="Your name" name="to_name" value={name} onChange={(e) => setName(e.target.value)}></input>
                 
                 <label>Email</label>
-                <input className="form-control" type="email" placeholder="name@example.com" name="from_name"></input>
+                <input className="form-control" type="email" placeholder="name@example.com" name="from_name" value={email} onChange={(e) => setEmail(e.target.value)}></input>
                 
                 <label>Your Message</label>
-                <textarea className="form-control" rows={parseFloat("3")} placeholder="Type something..." name="message" ></textarea>
+                <textarea className="form-control" rows={parseFloat("3")} placeholder="Type something..." name="message" value={content} onChange={(e) => setContent(e.target.value)}></textarea>
 
                 <button type="submit" value="Send" className="btn btn-success">Send</button>
                 </div>     
